@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 
 def papier_millimetre_png(
-    largeur_cm=21, 
-    hauteur_cm=29.7, 
+    largeur_cm=20, 
+    hauteur_cm=20, 
     marge_mm=1, 
     fichier="papier_millimetre.png",
     dpi=600
