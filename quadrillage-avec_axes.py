@@ -194,6 +194,5 @@ if __name__ == "__main__":
         subdivisions=5, graduation_mm=10,
         facteur_x=1, facteur_y=10,
         axe_x_mm=50, axe_y_mm=30,
-        label_x="x", label_y="y",
-        fichier="repere.png"
+        label_x="x", label_y="y"
     )
