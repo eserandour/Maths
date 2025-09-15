@@ -27,18 +27,6 @@ def quadrillage_avec_axes(
     depart_axes_ext=0.8, # dépassement au départ à gauche/bas (mm)
     fichier="points_et_fonctions_dans_repere.png"
 ):
-    """
-    Génère un quadrillage millimétré avec axes fléchés, graduations et labels x/y.
-
-    Points :
-        ("A", 2, 3)
-        ("B", -1, 4, {"offset_x_mm": 4, "offset_y_mm": -2})
-
-    Fonctions :
-        ("f", lambda x: x**2) 
-        ("g", lambda x: -x + 3, "blue")
-        ("h", lambda x: np.sin(x), "green", {"offset_x_mm": 8, "offset_y_mm": 2})
-    """
 
     if facteur_x <= 0 or facteur_y <= 0:
         raise ValueError("facteur_x et facteur_y doivent être > 0.")
