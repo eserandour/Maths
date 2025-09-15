@@ -10,21 +10,21 @@ def quadrillage_avec_axes(
     largeur_cm=20,
     hauteur_cm=20,
     marge_mm=10,
-    subdivisions=10,
-    graduation_mm=10,
-    facteur_x=1.0,
-    facteur_y=1.0,
-    axe_x_cm=None,
-    axe_y_cm=None,
-    label_x="x",
-    label_y="y",
-    points=None,                    # ("A", x, y) ou ("A", x, y, {"offset_x_mm":..,"offset_y_mm":..})
-    fonctions=None,                  # ("f", f) | ("f", f, "couleur") | ("f", f, "couleur", {"offset_x_mm":..,"offset_y_mm":..})
-    position_noms_fonctions="droite",# "milieu" ou "droite"
+    subdivisions=10,    # nb de lignes par cm (10 = millimétré, 5 = tous les 2 mm, 1 = seulement cm)
+    graduation_mm=10,   # espacement physique des graduations (mm) - 10 = 1 cm
+    facteur_x=1.0,      # facteur d’échelle pour les valeurs affichées sur X
+    facteur_y=1.0,      # facteur d’échelle pour les valeurs affichées sur Y
+    axe_x_cm=None,      # position verticale de l’axe X (cm depuis le bas) ; None = centre
+    axe_y_cm=None,      # position horizontale de l’axe Y (cm depuis la gauche) ; None = centre
+    label_x="x",        # nom de l’axe des abscisses (mettre "" pour ne pas afficher)
+    label_y="y",        # nom de l’axe des ordonnées (mettre "" pour ne pas afficher)
+    points=None,        # ("A", x, y) ou ("A", x, y, {"offset_x_mm":..,"offset_y_mm":..})
+    fonctions=None,     # ("f", f) | ("f", f, "couleur") | ("f", f, "couleur", {"offset_x_mm":..,"offset_y_mm":..})
+    position_noms_fonctions="droite", # "milieu" ou "droite"
     nb_points=500,
     dpi=600,
-    decal_fleche=1.5,
-    depart_axes_ext=0.8,
+    decal_fleche=1.4,   # dépassement de la flèche à droite/haut (mm)
+    depart_axes_ext=0.8,  # dépassement au départ à gauche/bas (mm)
     fichier="points_et_fonctions_dans_repere.png"
 ):
     """
