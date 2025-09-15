@@ -180,9 +180,10 @@ def quadrillage_avec_axes(
 
 
 # =====================
-# Exemple
+# Exemples
 # =====================
 if __name__ == "__main__":
+       
     quadrillage_avec_axes(
         largeur_cm=20,
         hauteur_cm=20,
@@ -200,4 +201,11 @@ if __name__ == "__main__":
             ("f", lambda x: 0.5*x**2 - 2, "red",  {"offset_x_mm": 2, "offset_y_mm": -2}),
             ("g", lambda x: -x + 3,       "blue", {"offset_x_mm": -4, "offset_y_mm": 6}),
         ],
+        fichier="points_et_fonctions_dans_repere_1.png"
+    )
+    
+    quadrillage_avec_axes(
+        largeur_cm=10,
+        hauteur_cm=10,
+        fichier="points_et_fonctions_dans_repere_2.png"
     )
