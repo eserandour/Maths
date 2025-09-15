@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 def _fmt(val: float) -> str:
     """Formate un nombre sans .0 inutile (ex.: 2.0 -> 2, 2.50 -> 2.5)."""
     s = f"{val:.2f}".rstrip("0").rstrip(".")
+    """Formate un nombre avec virgule comme séparateur décimal."""
+    s = s.replace(".", ",")  # <-- conversion point → virgule
     return s if s else "0"
 
 def papier_grille_axes(
