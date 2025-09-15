@@ -25,7 +25,7 @@ def quadrillage_avec_axes(
     dpi=600,
     decal_fleche=1.5,
     depart_axes_ext=0.8,
-    fichier="quadrillage.png"
+    fichier="points_et_fonctions_dans_repere.png"
 ):
     """
     Génère un quadrillage millimétré avec axes fléchés, graduations et labels x/y.
@@ -200,6 +200,7 @@ if __name__ == "__main__":
         hauteur_cm=20,
         subdivisions=10,
         graduation_mm=10,
+        facteur_x=1.0,
         facteur_y=2.0,
         axe_x_cm=6,
         axe_y_cm=5,
@@ -211,5 +212,4 @@ if __name__ == "__main__":
             ("f", lambda x: 0.5*x**2 - 2, "red",  {"offset_x_mm": 2, "offset_y_mm": -2}),
             ("g", lambda x: -x + 3,       "blue", {"offset_x_mm": -4, "offset_y_mm": 6}),
         ],
-        fichier="exemple_points_fonctions.png"
     )
