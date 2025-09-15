@@ -140,7 +140,7 @@ def quadrillage_avec_axes(
     # Export
     fig.savefig(fichier, dpi=dpi, bbox_inches="tight", pad_inches=0)
     plt.close(fig)
-    print("✅ Fichier généré :", fichier)
+    print("Fichier généré :", fichier)
 
 
 # =====================
@@ -151,6 +151,7 @@ if __name__ == "__main__":
     quadrillage_avec_axes(
         largeur_cm=20, hauteur_cm=20,
         graduation_mm=10, subdivisions=10,
+        points=[("A", -2, 5), ("B", 1, 8), ("C", 3, -3)],
         fichier="quadrillage_centre.png"
     )
 
@@ -160,6 +161,6 @@ if __name__ == "__main__":
         graduation_mm=10, subdivisions=10,
         axe_x_cm=6,   # axe des X placé à 6 cm du bas
         axe_y_cm=5,   # axe des Y placé à 5 cm de la gauche
-        points=[("A", 2, 3), ("B", -1, 4), ("C", 7, -2)],
+        points=[("D", 2, 3), ("E", -1, 4), ("F", 7, -2)],
         fichier="quadrillage_axes_decales.png"
     )
