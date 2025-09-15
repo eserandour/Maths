@@ -209,6 +209,7 @@ if __name__ == "__main__":
     quadrillage_avec_axes(
         largeur_cm=10,
         hauteur_cm=10,
+        subdivisions=5,
         fichier="points_et_fonctions_dans_repere_2.png"
     )
     
