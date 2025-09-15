@@ -184,6 +184,7 @@ def quadrillage_avec_axes(
 # =====================
 if __name__ == "__main__":
        
+    # Exemple 1
     quadrillage_avec_axes(
         largeur_cm=20,
         hauteur_cm=20,
@@ -204,8 +205,24 @@ if __name__ == "__main__":
         fichier="points_et_fonctions_dans_repere_1.png"
     )
     
+    # Exemple 2
     quadrillage_avec_axes(
         largeur_cm=10,
         hauteur_cm=10,
         fichier="points_et_fonctions_dans_repere_2.png"
+    )
+    
+    # Exemple 3
+    quadrillage_avec_axes(
+        largeur_cm=16,
+        hauteur_cm=12,
+        axe_x_cm=0,
+        axe_y_cm=0,
+        facteur_x=0.1,
+        label_x="t (s)",
+        label_y="d (m)",
+        fonctions=[
+            ("", lambda x: 4.9*x**2),
+        ],
+        fichier="points_et_fonctions_dans_repere_3.png"
     )
