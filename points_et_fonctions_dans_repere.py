@@ -10,8 +10,8 @@ def quadrillage_avec_axes(
     largeur_cm=20,
     hauteur_cm=20,
     marge_mm=10,
-    graduation_mm=10,
     subdivisions=10,
+    graduation_mm=10,
     facteur_x=1.0,
     facteur_y=1.0,
     axe_x_cm=None,
@@ -198,6 +198,8 @@ if __name__ == "__main__":
     quadrillage_avec_axes(
         largeur_cm=20,
         hauteur_cm=20,
+        subdivisions=10,
+        graduation_mm=10,
         facteur_y=2.0,
         axe_x_cm=6,
         axe_y_cm=5,
@@ -207,7 +209,7 @@ if __name__ == "__main__":
         ],
         fonctions=[
             ("f", lambda x: 0.5*x**2 - 2, "red",  {"offset_x_mm": 2, "offset_y_mm": -2}),
-            ("g", lambda x: -x + 3,       "blue", {"offset_x_mm": -4,  "offset_y_mm": 6}),
+            ("g", lambda x: -x + 3,       "blue", {"offset_x_mm": -4, "offset_y_mm": 6}),
         ],
         fichier="exemple_points_fonctions.png"
     )
