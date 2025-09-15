@@ -147,7 +147,7 @@ def papier_grille_axes(
 # =====================
 # Exemples d'utilisation
 # =====================
-"""
+
 if __name__ == "__main__":
     # Exemple 1 : Millimétré, axes au centre, côtés négatifs visibles (par défaut)
     papier_grille_axes(
@@ -164,7 +164,7 @@ if __name__ == "__main__":
         largeur_cm=20, hauteur_cm=20,
         subdivisions=5, graduation_mm=10,
         facteur_x=1, facteur_y=10,
-        axe_x_mm=50, axe_y_mm=30,
+        axe_x_mm=60, axe_y_mm=40,
         label_x="x", label_y="y",
         fichier="papier_subdiv5.png"
     )
@@ -187,14 +187,4 @@ if __name__ == "__main__":
         axe_x_mm=0, axe_y_mm=0,             # origine en (xmin, ymin)
         label_x="x (cm)", label_y="y (cm)",
         fichier="papier_axes_en_coin.png"
-    )
-"""
-
-if __name__ == "__main__":
-    papier_grille_axes(
-        largeur_cm=20, hauteur_cm=20, marge_mm=10,
-        subdivisions=5, graduation_mm=10,
-        facteur_x=1, facteur_y=10,
-        axe_x_mm=50, axe_y_mm=30,
-        label_x="x", label_y="y"
     )
